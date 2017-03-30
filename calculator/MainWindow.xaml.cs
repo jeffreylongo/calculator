@@ -28,37 +28,42 @@ namespace calculator
         //this is the top text input box. 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var input1 = Console.ReadLine();
+            
         }
         //this is the bottom text input box
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            var input2 = Console.ReadLine();
-        }
-        //this is my + button 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
             
         }
-        //this is my - button
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        //this is my + button 
+        private void Plus_Click(object sender, RoutedEventArgs e)
         {
-
+            int output = Int32.Parse(input1.Text) + Int32.Parse(input2.Text);
+            Answer.Content = output.ToString();
+        }
+        //this is my - button
+        private void Minus_Click(object sender, RoutedEventArgs e)
+        {
+            int output = Int32.Parse(input1.Text) - Int32.Parse(input2.Text);
+            Answer.Content = output.ToString();
         }
         //this is my * button
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-
+            int output = Int32.Parse(input1.Text) * Int32.Parse(input2.Text);
+            Answer.Content = output.ToString();
         }
         //this is my / button 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Divide_Click(object sender, RoutedEventArgs e)
         {
-
+            int output = Int32.Parse(input1.Text) / Int32.Parse(input2.Text);
+            Answer.Content = output.ToString();
         }
         //this is my % button
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Percentage_Click(object sender, RoutedEventArgs e)
         {
-
+            int output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
+            Answer.Content = output.ToString();
         }
     }
 }
