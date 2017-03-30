@@ -68,7 +68,10 @@ namespace calculator
         //memory recall button
         private void Memory_Recall_Click(object sender, RoutedEventArgs e)
         {
-
+            using (var reader = new StreamReader(memoryPath))
+            {
+                reader.ReadLine();
+            }
         }
         //memory clear button
         private void Memory_Clear_Click(object sender, RoutedEventArgs e)
