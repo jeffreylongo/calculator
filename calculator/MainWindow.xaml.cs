@@ -25,16 +25,7 @@ namespace calculator
             InitializeComponent();
             this.Title = "Jeff's First Calculator";
         }
-        //this is the top text input box. 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-        //this is the bottom text input box
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-            
-        }
+
         //this is my + button 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
