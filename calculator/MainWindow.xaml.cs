@@ -71,12 +71,16 @@ namespace calculator
             using (var reader = new StreamReader(memoryPath))
             {
                 reader.ReadLine();
+                Answer.Content = reader;
             }
         }
         //memory clear button
         private void Memory_Clear_Click(object sender, RoutedEventArgs e)
         {
-
+            using (var writer = new StreamWriter(memoryPath))
+            {
+                writer.WriteLine("");
+            }
         }
     }
 }
