@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="525">
     <Grid Background="#FF5F59D7">
-        <TextBox x:Name="input1" HorizontalAlignment="Left" Height="23" Margin="200,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.077,-2.194" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="input2" HorizontalAlignment="Left" Height="23" Margin="200,211,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.064,0.343" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="input1" HorizontalAlignment="Left" Height="23" Margin="200,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.077,-2.194" />
+        <TextBox x:Name="input2" HorizontalAlignment="Left" Height="23" Margin="200,211,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.064,0.343" />
         <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="23,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,0.497" Click="Plus_Click" FontWeight="Bold"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="117,142,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.133,0.608" Click="Minus_Click" FontWeight="Bold"/>
         <Button Content="*" HorizontalAlignment="Left" Margin="221,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.173,0.719" Click="Multiply_Click" FontWeight="Bold"/>

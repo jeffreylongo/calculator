@@ -70,8 +70,8 @@ namespace calculator
         {
             using (var reader = new StreamReader(memoryPath))
             {
-                reader.ReadLine();
-                Answer.Content = reader;
+                var input= reader.ReadLine();
+                Answer.Content = Int32.Parse(input);
             }
         }
         //memory clear button
