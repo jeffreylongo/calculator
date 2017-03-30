@@ -6,16 +6,17 @@
         xmlns:local="clr-namespace:calculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="525">
-    <Grid>
+    <Grid Background="#FF5F59D7">
         <TextBox x:Name="input1" HorizontalAlignment="Left" Height="23" Margin="200,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.077,-2.194" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="input2" HorizontalAlignment="Left" Height="23" Margin="200,211,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.064,0.343" TextChanged="TextBox_TextChanged_1"/>
-        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="23,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,0.497" Click="Plus_Click"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="117,142,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.133,0.608" Click="Minus_Click"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="221,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.173,0.719" Click="Multiply_Click"/>
-        <Button Content="/" HorizontalAlignment="Left" Margin="322,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.703,0.608" Click="Divide_Click"/>
-        <Button Content="%" HorizontalAlignment="Left" Margin="423,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.098,0.534" Click="Percentage_Click"/>
+        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="23,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,0.497" Click="Plus_Click" FontWeight="Bold"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="117,142,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.133,0.608" Click="Minus_Click" FontWeight="Bold"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="221,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.173,0.719" Click="Multiply_Click" FontWeight="Bold"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="322,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.703,0.608" Click="Divide_Click" FontWeight="Bold"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="423,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.098,0.534" Click="Percentage_Click" FontWeight="Bold"/>
         <Label x:Name="Answer" Content="Answer" HorizontalAlignment="Left" Margin="221,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.307,-0.254" Height="34" Width="75" HorizontalContentAlignment="Center" FontSize="20"/>
         <Label Content="=" HorizontalAlignment="Left" Margin="245,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.218,0.484" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Jeff's First Calculator" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.165" Height="40" Width="239" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Impact"/>
 
     </Grid>
 </Window>
