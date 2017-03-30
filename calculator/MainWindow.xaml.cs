@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace calculator
             InitializeComponent();
             this.Title = "Jeff's First Calculator";
         }
-
+        string memoryPath = "memory.txt"; 
         //this is my + button 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
@@ -55,6 +56,24 @@ namespace calculator
         {
             int output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
+        }
+        //this is my memory store button
+        private void Memory_Store_Click(object sender, RoutedEventArgs e)
+        {
+            using (var writer = new StreamWriter(memoryPath))
+            {
+                writer.WriteLine(Answer.Content);
+            }
+        }
+        //memory recall button
+        private void Memory_Recall_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        //memory clear button
+        private void Memory_Clear_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

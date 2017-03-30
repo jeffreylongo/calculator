@@ -17,9 +17,9 @@
         <Label x:Name="Answer" Content="Answer" HorizontalAlignment="Left" Margin="221,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.307,-0.254" Height="34" Width="75" HorizontalContentAlignment="Center" FontSize="20"/>
         <Label Content="=" HorizontalAlignment="Left" Margin="245,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.218,0.484" FontSize="24" FontWeight="Bold"/>
         <Label Content="Jeff's First Calculator" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.165" Height="40" Width="239" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Impact"/>
-        <Button Content="MS" HorizontalAlignment="Left" Margin="200,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.762,0.473"/>
-        <Button Content="MR" HorizontalAlignment="Left" Margin="245,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.988,0.502"/>
-        <Button Content="MC" HorizontalAlignment="Left" Margin="285,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.816,0.502"/>
+        <Button Content="MS" HorizontalAlignment="Left" Margin="200,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.762,0.473" Click="Memory_Store_Click"/>
+        <Button Content="MR" HorizontalAlignment="Left" Margin="245,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.988,0.502" Click="Memory_Recall_Click"/>
+        <Button Content="MC" HorizontalAlignment="Left" Margin="285,101,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.816,0.502" Click="Memory_Clear_Click"/>
 
     </Grid>
 </Window>
