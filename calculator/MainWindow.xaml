@@ -13,8 +13,14 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="232,416,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.133,0.608" Click="Minus_Click" FontWeight="Bold"/>
         <Button Content="*" HorizontalAlignment="Left" Margin="232,366,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="-0.173,0.719" Click="Multiply_Click" FontWeight="Bold"/>
         <Button Content="/" HorizontalAlignment="Left" Margin="232,316,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="-0.703,0.608" Click="Divide_Click" FontWeight="Bold"/>
-        <Button Content="%" HorizontalAlignment="Left" Margin="232,266,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="Percentage_Click" FontWeight="Bold"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="0,266,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="Percentage_Click" FontWeight="Bold"/>
+        <Button Content="√" HorizontalAlignment="Left" Margin="77,266,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="SquareRoot_Click" FontWeight="Bold"/>
+        <Button Content="X^2" HorizontalAlignment="Left" Margin="155,266,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="Square_Click" FontWeight="Bold"/>
+        <Button Content="1/X" HorizontalAlignment="Left" Margin="232,266,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="Fraction_Click" FontWeight="Bold"/>
         <Button Content="=" HorizontalAlignment="Left" Margin="232,516,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="Equal_Click" FontWeight="Bold"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="155,316,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="9_Click" FontWeight="Bold"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="78,316,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="8_Click" FontWeight="Bold"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="0,316,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" Click="7_Click" FontWeight="Bold"/>
         <Label x:Name="Answer" Content="0" Margin="0,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.307,-0.254" Height="93" HorizontalContentAlignment="Right" FontSize="64" FontWeight="Bold" HorizontalAlignment="Left" Width="300"/>
         <Label Content="Jeff's First Calculator" HorizontalAlignment="Left" Margin="39,12,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.165" Height="40" Width="239" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Impact"/>
         <Button Content="MS" HorizontalAlignment="Left" Margin="52,214,0,0" VerticalAlignment="Top" Height ="52" Width="52" RenderTransformOrigin="0.762,0.473" Click="Memory_Store_Click"/>
