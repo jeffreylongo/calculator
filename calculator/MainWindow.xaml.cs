@@ -21,6 +21,14 @@ namespace calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        double num1 = 0;
+        double num2 = 0;
+        string dotSign = "";
+        bool plusClicked = false;
+        bool subClicked = false;
+        bool multClicked = false;
+        bool divClicked = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,8 +38,17 @@ namespace calculator
         //this is my + button 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
-            double output = Int32.Parse(input1.Text) + Int32.Parse(input2.Text);
-            Answer.Content = output.ToString();
+            var rawInput = "";
+            //double output = Int32.Parse(input1.Text) + Int32.Parse(input2.Text);
+            //Answer.Content = output.ToString();
+            rawInput = Convert.ToString(Answer.Content);
+            num1 += Convert.ToDouble(rawInput);
+            Answer.Content = "0";
+
+            plusClicked = true;
+            subClicked = false;
+            multClicked = false;
+            divClicked = false;
         }
         //this is my - button
         private void Minus_Click(object sender, RoutedEventArgs e)
@@ -82,7 +99,7 @@ namespace calculator
                 writer.WriteLine("");
             }
         }
-
+        //here are my numbers.  
         private void Nine_Click(object sender, RoutedEventArgs e)
         {
             Answer.Content += "9";
@@ -136,6 +153,26 @@ namespace calculator
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             Answer.Content = "0";
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        //Equal button functions 
+        private void Equal_Click(object sender, RoutedEventArgs e)
+        {
+            double rawInput = 0;
+            if (plusClicked == true)
+            {
+                rawInput = Convert.ToDouble(Answer.Content);
+                num2 = num1 + rawInput;
+                Answer.Content = num2.ToString();
+                num1 = 0;
+            }
+
+            
+
         }
     }
 }
