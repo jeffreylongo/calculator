@@ -34,7 +34,11 @@
         <Button Content="." HorizontalAlignment="Left" Margin="154,518,0,-0.5" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" BorderThickness="0" FontSize="16" Background="#FF5656FB"/>
         <Button Content="≡" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Height="50" Width="78" RenderTransformOrigin="0.098,0.534" BorderThickness="0" FontSize="36" Background="#FF7878F6"/>
 
-        <Label x:Name="Answer" Content="0" Margin="0,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.307,-0.254" Height="93" HorizontalContentAlignment="Right" FontSize="64" FontWeight="Bold" HorizontalAlignment="Left" Width="300"/>
+        <Label x:Name="Answer" Content="0" Margin="0,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.307,-0.254" Height="93" HorizontalContentAlignment="Right" FontSize="64" FontWeight="Bold" HorizontalAlignment="Left" Width="300">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
         <Label Content="Jeffulator" HorizontalAlignment="Left" Margin="63,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.165" Height="56" Width="226" FontSize="36" HorizontalContentAlignment="Center" FontFamily="Microsoft JhengHei UI" Foreground="#FFD2CECE">
             <Label.Effect>
                 <DropShadowEffect/>
@@ -46,6 +50,16 @@
         <Button Content="MS" HorizontalAlignment="Left" Margin="207,216,0,0" VerticalAlignment="Top" Height ="52" Width="52" RenderTransformOrigin="0.762,0.473" Click="Memory_Store_Click" Background="#FF7878F6" BorderThickness="0,0,0,1"/>
         <Button Content="MR" HorizontalAlignment="Left" Margin="258,216,0,0" VerticalAlignment="Top" Height ="52" Width="52" RenderTransformOrigin="0.988,0.502" Click="Memory_Recall_Click" BorderThickness="0,0,0,1" Background="#FF7878F6"/>
         <Button Content="MC" HorizontalAlignment="Left" Margin="156,216,0,0" VerticalAlignment="Top" Height ="52" Width="52" RenderTransformOrigin="0.816,0.502" Click="Memory_Clear_Click" Background="#FF7878F6" BorderThickness="0,0,0,1"/>
+        <Rectangle Fill="#FFD2CECE" HorizontalAlignment="Left" Height="5" Margin="0,10,0,0" Stroke="#FFD2CECE" VerticalAlignment="Top" Width="310">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle Fill="#FFD2CECE" HorizontalAlignment="Left" Height="5" Margin="0,119,0,0" Stroke="#FFD2CECE" VerticalAlignment="Top" Width="310">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
 
     </Grid>
 </Window>
