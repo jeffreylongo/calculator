@@ -30,31 +30,31 @@ namespace calculator
         //this is my + button 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
-            int output = Int32.Parse(input1.Text) + Int32.Parse(input2.Text);
+            double output = Int32.Parse(input1.Text) + Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
         }
         //this is my - button
         private void Minus_Click(object sender, RoutedEventArgs e)
         {
-            int output = Int32.Parse(input1.Text) - Int32.Parse(input2.Text);
+            double output = Int32.Parse(input1.Text) - Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
         }
         //this is my * button
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-            int output = Int32.Parse(input1.Text) * Int32.Parse(input2.Text);
+            double output = Int32.Parse(input1.Text) * Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
         }
         //this is my / button 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-            int output = Int32.Parse(input1.Text) / Int32.Parse(input2.Text);
+            double output = Int32.Parse(input1.Text) / Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
         }
         //this is my % button
         private void Percentage_Click(object sender, RoutedEventArgs e)
         {
-            int output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
+            double output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
             Answer.Content = output.ToString();
         }
         //this is my memory store button
@@ -86,6 +86,16 @@ namespace calculator
         private void Nine_Click(object sender, RoutedEventArgs e)
         {
             Answer.Content += "9";
+        }
+
+        private void Eight_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "8";
+        }
+
+        private void Seven_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "7";
         }
     }
 }
