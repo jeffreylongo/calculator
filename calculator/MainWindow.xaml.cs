@@ -170,6 +170,28 @@ namespace calculator
                 Answer.Content = num2.ToString();
                 num1 = 0;
             }
+            if (subClicked == true)
+            {
+                rawInput = Convert.ToDouble(Answer.Content);
+                num2 = num1 - rawInput;
+                Answer.Content = num2.ToString();
+                num1 = 0;
+            }
+            if (multClicked == true)
+            {
+                rawInput = Convert.ToDouble(Answer.Content);
+                num2 = num1 * rawInput;
+                Answer.Content = num2.ToString();
+                num1 = 0;
+            }
+            if (divClicked == true)
+            {
+                rawInput = Convert.ToDouble(Answer.Content);
+                num2 = num1 / rawInput;
+                Answer.Content = num2.ToString();
+                num1 = 0;
+            }
+
 
             
 
