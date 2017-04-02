@@ -23,7 +23,6 @@ namespace calculator
     {
         double num1 = 0;
         double num2 = 0;
-        string dotSign = "";
         bool plusClicked = false;
         bool subClicked = false;
         bool multClicked = false;
