@@ -97,5 +97,20 @@ namespace calculator
         {
             Answer.Content += "7";
         }
+
+        private void Six_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "6";
+        }
+
+        private void Five_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "5";
+        }
+
+        private void Four_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "4";
+        }
     }
 }
