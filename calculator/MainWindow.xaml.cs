@@ -53,20 +53,47 @@ namespace calculator
         //this is my - button
         private void Minus_Click(object sender, RoutedEventArgs e)
         {
-            double output = Int32.Parse(input1.Text) - Int32.Parse(input2.Text);
-            Answer.Content = output.ToString();
+            var rawInput = "";
+            //double output = Int32.Parse(input1.Text) - Int32.Parse(input2.Text);
+            //Answer.Content = output.ToString();
+            rawInput = Convert.ToString(Answer.Content);
+            num1 += Convert.ToDouble(rawInput);
+            Answer.Content = "0";
+
+            plusClicked = false;
+            subClicked = true;
+            multClicked = false;
+            divClicked = false;
         }
         //this is my * button
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-            double output = Int32.Parse(input1.Text) * Int32.Parse(input2.Text);
-            Answer.Content = output.ToString();
+            var rawInput = "";
+            //double output = Int32.Parse(input1.Text) * Int32.Parse(input2.Text);
+            //Answer.Content = output.ToString();
+            rawInput = Convert.ToString(Answer.Content);
+            num1 += Convert.ToDouble(rawInput);
+            Answer.Content = "0";
+
+            plusClicked = false;
+            subClicked = false;
+            multClicked = true;
+            divClicked = false;
         }
         //this is my / button 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-            double output = Int32.Parse(input1.Text) / Int32.Parse(input2.Text);
-            Answer.Content = output.ToString();
+            var rawInput = "";
+            //double output = Int32.Parse(input1.Text) / Int32.Parse(input2.Text);
+            //Answer.Content = output.ToString();
+            rawInput = Convert.ToString(Answer.Content);
+            num1 += Convert.ToDouble(rawInput);
+            Answer.Content = "0";
+
+            plusClicked = false;
+            subClicked = false;
+            multClicked = false;
+            divClicked = true;
         }
         //this is my % button
         private void Percentage_Click(object sender, RoutedEventArgs e)
