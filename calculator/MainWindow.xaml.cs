@@ -112,5 +112,30 @@ namespace calculator
         {
             Answer.Content += "4";
         }
+
+        private void Three_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "3";
+        }
+
+        private void Two_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "2";
+        }
+
+        private void One_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "1";
+        }
+
+        private void Zero_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "0";
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content = "0";
+        }
     }
 }
