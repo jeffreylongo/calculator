@@ -82,5 +82,10 @@ namespace calculator
                 writer.WriteLine("");
             }
         }
+
+        private void Nine_Click(object sender, RoutedEventArgs e)
+        {
+            Answer.Content += "9";
+        }
     }
 }
