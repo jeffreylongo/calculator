@@ -97,8 +97,8 @@ namespace calculator
         //this is my % button
         private void Percentage_Click(object sender, RoutedEventArgs e)
         {
-            double output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
-            Answer.Content = output.ToString();
+            //double output = Int32.Parse(input1.Text) % Int32.Parse(input2.Text);
+            //Answer.Content = output.ToString();
         }
         //this is my memory store button
         private void Memory_Store_Click(object sender, RoutedEventArgs e)
